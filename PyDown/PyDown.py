@@ -14,7 +14,6 @@ class DownVideo:
         self.index_url = url
         self.video_list = []
         self.all_urls = []
-        self.all_video_urls = []
         self.course_title = ''
         self.course_title_pattern = '<h1 class=".*?">(.*?)</h1>'
         self.course_link_pattern = ('<li><a href="(.*?)" target.*?'
@@ -50,7 +49,10 @@ class DownVideo:
                         " Gecko/20100101 Firefox/23.0"))
         response = urllib.request.urlopen(req)
         video_size = float(response.getheader('Content-Length'))
-        file_size = 0
+        if os.path.exists(file):
+            file_size = os.path.getsize(file)
+        else:
+            file_size = 0
 
         while file_size < video_size:
             open_mode = 'wb'
