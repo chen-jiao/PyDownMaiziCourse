@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # coding=utf-8
-# jiao_chen@realsil.com.cn
-# created on Nov 21, 2014
+# jiao.chen@outlook.com
+# created on Aug 22, 2016
 
 import urllib.request
 import requests
