@@ -1,0 +1,9 @@
+[
+	{
+		"course url": "http://www.maiziedu.com/course/21/",
+		"course dir": "H:\\麦子学院",
+		"course title pattern": "<h1 class=\".*?\">(.*?)</h1>",
+		"course index pattern": "<li><a href=\"(.*?)\" target.*?<span class=\"fl\">(.*?)</span>",
+		"course video pattern": "<source src=\"(.*?)\" type=\\'video/mp4\\' />"
+	}
+]
